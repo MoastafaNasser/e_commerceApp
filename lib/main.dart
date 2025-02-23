@@ -1,3 +1,4 @@
+import 'package:ecommerce/core/app_colors.dart';
 import 'package:ecommerce/views/auth/ui/login_view.dart';
 import 'package:flutter/material.dart';
 
@@ -14,9 +15,9 @@ class Ourmarket extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Ourmarket',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        scaffoldBackgroundColor: AppColors.kScaffoldColor,
       ),
+      
       home: LoginView(),
     );
   }
