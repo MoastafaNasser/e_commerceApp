@@ -1,5 +1,6 @@
 import 'package:ecommerce/core/app_colors.dart';
 import 'package:ecommerce/views/auth/ui/Custom_text_Form_Field.dart';
+import 'package:ecommerce/views/auth/ui/custom_Text_Botton.dart';
 import 'package:flutter/material.dart';
 
 class LoginView extends StatelessWidget {
@@ -42,7 +43,6 @@ class LoginView extends StatelessWidget {
                   ),
                   customTextFormField(
                     Labeltext: "Password",
-                    
                     isSecured: true,
                     suffixIcon: IconButton(
                       onPressed: () {},
@@ -50,7 +50,45 @@ class LoginView extends StatelessWidget {
                         Icons.visibility_off,
                       ),
                     ),
-                    
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  customTextBotton(
+                    text: "Forget Password",
+                    onTap: () {},
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "Login",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                        ),
+                      ),
+                      ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: AppColors.kPrimaryColor,
+                          foregroundColor: AppColors.kBordersideColor,
+                          iconSize: 20,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                        ),
+                        onPressed: () {},
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric( vertical: 14,horizontal: 7),
+                          child: Icon(
+                            Icons.arrow_forward,
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),

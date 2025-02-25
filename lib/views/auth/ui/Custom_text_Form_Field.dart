@@ -1,16 +1,16 @@
-
 import 'package:ecommerce/core/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class customTextFormField extends StatelessWidget {
   const customTextFormField({
-    super.key, required this.Labeltext, this.suffixIcon,  this.isSecured = false,
+    super.key,
+    required this.Labeltext,
+    this.suffixIcon,
+    this.isSecured = false,
   });
   final String Labeltext;
-  final Widget ? suffixIcon ;
+  final Widget? suffixIcon;
   final bool isSecured;
-
- 
 
   @override
   Widget build(BuildContext context) {
@@ -27,8 +27,6 @@ class customTextFormField extends StatelessWidget {
       decoration: InputDecoration(
         labelText: Labeltext,
         suffixIcon: suffixIcon,
-        
-        
         border: OutlineInputBorder(
           borderSide: BorderSide(
             color: AppColors.kBordersideColor,
